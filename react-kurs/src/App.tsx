@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Typography from './components/Typography'
 import Hero from './features/Hero/Hero'
+import Users from './features/Users/Users'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,20 +10,20 @@ function App() {
   return (
     <>
       <section id="center">
-        <Typography 
-          title="Erste Überschrift" 
+        <Typography
+          title="Erste Überschrift"
           variant='h1'
           hasButton
-          buttonLabel='Props Label Btn'/>
-        
-          <Hero/>
-       
+          buttonLabel='Props Label Btn' />
+
+        <Users/>
+        <Hero />
         <div>
-          <Typography 
+          <Typography
             title="Get Started"
             variant="h2"
-            hasButton={false} 
-            />
+            hasButton={false}
+          />
           <p>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
@@ -45,7 +46,7 @@ function App() {
           </svg>
           <h2>Documentation</h2>
           <p>Your questions, answered</p>
-        
+
         </div>
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">

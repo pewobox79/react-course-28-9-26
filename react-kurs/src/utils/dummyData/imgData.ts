@@ -5,21 +5,24 @@ import viteLogo from '../../assets/vite.svg'
 export const images = [
 
     {
-        src: heroImg,
-        className: "base",
+        uid: Math.random()*10,
+        src: viteLogo,
+        className: "",
         alt: "alternativ text",
-        width: "170",
-        height: "179"
+        width: "",
+        height: ""
     },
     {
+        uid: Math.random() * 10,
         src: reactLogo,
-        className: "framework",
+        className: "",
         alt: "React logo",
         width: "",
         height: ""
     }, {
+        uid: Math.random() * 10,
         src: viteLogo,
-        className: "vite",
+        className: "",
         alt: "Vite logo",
         width: "",
         height: ""
