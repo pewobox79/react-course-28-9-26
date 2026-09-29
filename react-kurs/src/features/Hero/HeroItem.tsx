@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { ThemeContext } from "../../context/themeContext"
 
 type HeroImageProps = {
     src: string
@@ -11,6 +12,7 @@ type HeroImageProps = {
 
 export default function HeroItem({uid, src, alt, width, height, className }: HeroImageProps) {
 
+    const {context} = useContext(ThemeContext)
     const [hasBorder, setHasBorder] = useState(false);
     const [isVisible, setIsVisible] = useState(true)
         
@@ -32,7 +34,7 @@ export default function HeroItem({uid, src, alt, width, height, className }: Her
             width={width}
             height={height}
             className={className}
-            style={{ border: `${hasBorder ? "1" : "0"}px solid red`, padding: 10, margin: 4, opacity: `${isVisible ? 1 : 0}` }}
+            style={{ border: `${hasBorder ? "1" : "0"}px solid ${context === "light"? "yellow": "red"}`, padding: 10, margin: 4, opacity: `${isVisible ? 1 : 0}` }}
         />
         <button onClick={toggleVisibility}>Bild {isVisible ? "Ausblenden": "Einblenden"}</button></div>
 }

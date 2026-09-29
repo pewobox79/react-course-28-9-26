@@ -1,11 +1,12 @@
 type ButtonProps ={
     label: string
+    action?: ()=>void
 }
 
-function Button ({label}:ButtonProps){
+function Button ({label,action}:ButtonProps){
 
     function handleClick (){
-        alert("btn clicked")
+        action()
     }
     //(INLINE Schreibweise)
     //return <button onClick={()=>alert("btn clicked")}>{label}</button>

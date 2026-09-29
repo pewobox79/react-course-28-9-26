@@ -1,3 +1,5 @@
+import { useContext } from "react"
+import { ThemeContext } from "../context/themeContext"
 import Button from "./Button"
 
 type TypographyProps = {
@@ -9,6 +11,7 @@ type TypographyProps = {
 
 function Typography({ title, variant, hasButton, buttonLabel }: TypographyProps) {
 
+    const {setContext} = useContext(ThemeContext)
     //const { title, variant } = props // destructuring Object
     //early return wenn title nicht vorhanden => dann soll nichts ausgegeben werden!
     if (!title) {
@@ -19,7 +22,7 @@ function Typography({ title, variant, hasButton, buttonLabel }: TypographyProps)
     const Tag = variant || "h1";
     return <>
         <Tag>{title || ""}</Tag>
-        {hasButton && <Button label={buttonLabel || ""} />}
+        {hasButton && <Button action={()=>setContext("dark")}label={buttonLabel || ""} />}
     </>
 }
 

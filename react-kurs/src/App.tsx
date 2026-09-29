@@ -3,6 +3,7 @@ import './App.css'
 import Typography from './components/Typography'
 import Hero from './features/Hero/Hero'
 import Users from './features/Users/Users'
+import UsersAsync from './features/Users/UsersAsync'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,7 @@ function App() {
           hasButton
           buttonLabel='Props Label Btn' />
 
-        <Users/>
+        <UsersAsync/>
         <Hero />
         <div>
           <Typography
