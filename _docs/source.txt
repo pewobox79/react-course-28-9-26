@@ -19,8 +19,6 @@ https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 https://axios-http.com/docs/example
 ## protected routes
 https://www.robinwieruch.de/react-router-private-routes/
-##react class component migrate to react functions component
-https://react.dev/reference/react/Component#alternatives
 ## React useContext
 https://react.dev/reference/react/useContext
 //ZustandJS
@@ -34,9 +32,4 @@ https://tanstack.com/query/v5/docs/framework/react/quick-start
 https://getcssscan.com/css-box-shadow-examples
 ##Abort Controller
 https://developer.mozilla.org/en-US/docs/Web/API/AbortController
-##ReactHookForms
-https://react-hook-form.com/
-##bundlephobia
-https://bundlephobia.com/
-##React Documentary on YouTube
-https://youtu.be/8pDqJVdNa44
+
