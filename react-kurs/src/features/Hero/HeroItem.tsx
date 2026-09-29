@@ -13,7 +13,7 @@ export default function HeroItem({uid, src, alt, width, height, className }: Her
 
     const [hasBorder, setHasBorder] = useState(false);
     const [isVisible, setIsVisible] = useState(true)
-    
+        
     function toggleBorder(){
         setHasBorder(!hasBorder)
         console.log("inner function", hasBorder, uid)

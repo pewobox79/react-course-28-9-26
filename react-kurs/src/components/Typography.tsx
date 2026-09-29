@@ -10,7 +10,6 @@ type TypographyProps = {
 function Typography({ title, variant, hasButton, buttonLabel }: TypographyProps) {
 
     //const { title, variant } = props // destructuring Object
-
     //early return wenn title nicht vorhanden => dann soll nichts ausgegeben werden!
     if (!title) {
         console.warn("title fehlt")

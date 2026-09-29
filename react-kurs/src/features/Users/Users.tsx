@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useMemo, useCallback } from "react"
 
 type UserPropsFromApi = {
     username: string
@@ -33,9 +33,13 @@ export default function Users() {
         </div>
     })
 
+    const filteredUsers = useMemo(()=> {
+        return users.filter(user => user?.username?.startsWith("B"))
+    },[state])
     return <div>
+        <button>filter nach B</button>
         <button onClick={handleState}>UsersButton</button>
         <h1>Userlist</h1>
-        {UserListToRender}
+        {filteredUsers ? JSON.stringify(filteredUsers) : UserListToRender}
     </div>
 }

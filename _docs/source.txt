@@ -19,6 +19,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 https://axios-http.com/docs/example
 ## protected routes
 https://www.robinwieruch.de/react-router-private-routes/
+##react class component migrate to react functions component
+https://react.dev/reference/react/Component#alternatives
 ## React useContext
 https://react.dev/reference/react/useContext
 //ZustandJS
